@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Layout from "./Components/Layout";
+import React from "react";
+import { ThemeProvider, createMuiTheme } from "@material-ui/core";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import AccessControl from "./Components/AccessControl";
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#673AB7",
+    },
+    secondary:{
+      main:'#27AE60'
+    }
+  },
+  typography: {
+    fontFamily: "Ubuntu",
+    fontWeightLight: 400,
+    fontWeightRegular: 500,
+    fontWeightMedium: 600,
+    fontWeightBold: 700,
+  },
+});
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={theme}>
+        <Router>
+          <Layout >
+            <Switch>
+              <Route path ='/AccessControl' component={AccessControl} />
+            </Switch>
+          </Layout >
+        </Router>
+      </ThemeProvider>
     </div>
   );
 }
