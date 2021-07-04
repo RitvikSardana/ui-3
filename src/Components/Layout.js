@@ -127,7 +127,7 @@ function Layout({ children }) {
         <Toolbar style={{ justifyContent: "flex-end" }}>
           <div className={classes.appbar_div}>
             <Avatar src="" className={classes.avatar} />
-            <Typography style={{ marginRight: 16 }}>Ritvik</Typography>
+            <Typography style={{ marginRight: 16 }}>Kishore</Typography>
             <NotificationsNoneOutlinedIcon style={{ marginRight: 8 }} />
             <HelpOutlineOutlinedIcon />
           </div>
