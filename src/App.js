@@ -30,7 +30,7 @@ function App() {
         <Router>
           <Layout >
             <Switch>
-              <Route path ='/AccessControl' component={AccessControl} />
+              <Route path ='/' component={AccessControl} />
             </Switch>
           </Layout >
         </Router>
