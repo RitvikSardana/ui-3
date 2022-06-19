@@ -26,12 +26,7 @@ function AccessControl() {
       text: "Permissions",
       icon: <RssFeedOutlinedIcon/>,
       path: "/AccessControl",
-    },
-    {
-      text: "Approval Matrix",
-      icon: <BorderAllSharpIcon/>,
-      path: "/AccessControl/Matrix",
-    },
+    }
   ];
 
   return (

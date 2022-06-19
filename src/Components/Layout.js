@@ -104,7 +104,7 @@ function Layout({ children }) {
         <div>
           <Typography variant="h5" className={classes.title}>
             <HomeOutlinedIcon className={classes.icon} color="primary" />
-            MYSITE
+            MY DASHBOARD
           </Typography>
         </div>
         <List>
